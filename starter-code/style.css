@@ -5,3 +5,64 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 80px 0;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #151515;
+    color: #FFFFFF;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__description {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.footer__header {
+    font-family: 'Big Shoulders Display';
+    font-size: 36px;
+    max-width: 160px;
+}
+
+.footer__body {
+    font-family: 'Outfit';
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 432px;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.footer__img--wrapper {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__img {
+    width: 20px;
+    height: 20px;
+}
