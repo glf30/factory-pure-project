@@ -71,6 +71,94 @@ header {
     width: 100%;
 }
 
+/* SHOWCASE */
+.showcase__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase__top--wrapper {
+    height: 400px;
+}
+
+.showcase__top--img {
+    height: 80%;
+    width: 100%;
+}
+
+.showcase__header {
+    display: flex;
+    flex-direction: column;
+}
+.showcase__header--title{
+    font-family: 'Big Shoulders Display';
+    font-size: 60px;
+    line-height: 50px;
+    color: #151515;
+}
+
+.showcase__header--paragraph {
+    font-family: 'Outfit';
+    font-size: 22px;
+    line-height: 32px;
+    color: #444444;
+}
+
+.showcase__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase__main--wrapper {
+    width: 640px;
+    height: 666px;
+}
+
+.showcase__main--img {
+    height: 100%;
+    width: 100%;
+}
+
+.showcase__bottom--wrapper {
+    width: 300px;
+    height: 370px;
+}
+
+.showcase__bottom--img {
+    height: 80%;
+    width: 100%;
+}
+
+.showcase__bottom--info {
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151515;
+    color: #FFFFFF;
+    padding: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 446px;
+}
+
+.showcase__description--header {
+    font-family: 'Big Shoulders Display';
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.showcase__description--paragraph {
+    font-family: 'Outfit';
+    font-size: 22px;
+    line-height: 32px;
+}
+
 /* FOOTER */
 footer {
     background-color: #151515;
@@ -91,7 +179,7 @@ footer {
 .footer__header {
     font-family: 'Big Shoulders Display';
     font-size: 36px;
-    max-width: 160px;
+    max-width: 170px;
 }
 
 .footer__body {
