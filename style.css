@@ -27,11 +27,9 @@ header {
 }
 
 .header__text {
-  /* width: 75%; */
   width: 65%;
   position: absolute;
   top: 20%;
-  /* left: 10%; */
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -41,6 +39,7 @@ header {
   font-family: "Big Shoulders Display";
   font-size: 96px;
   max-width: 450px;
+  mix-blend-mode: difference;
 }
 
 .header__body {
@@ -63,15 +62,13 @@ header {
 }
 
 .header__panel {
+  position: relative;
+  color: #ffffff;
   background-color: #151515;
   height: calc(100vh - 210px);
   width: 30%;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
-
-/* .header__img {
-  height: 100%;
-  width: 100%;
-} */
 
 .header__img {
   background-image: url("./assets/desktop/image-hero@2x.jpg");
@@ -79,6 +76,8 @@ header {
   width: 100%;
   background-size: cover;
   background-position: center;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
 }
 
 .header__button {
@@ -125,26 +124,32 @@ header {
 .showcase__top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .showcase__top--wrapper {
   height: 400px;
+  flex: 2;
+  max-width: 700px;
 }
 
 .showcase__top--img {
-  height: 80%;
+  height: 100%;
   width: 100%;
 }
 
 .showcase__header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }
 .showcase__header--title {
   font-family: "Big Shoulders Display";
   font-size: 60px;
-  line-height: 50px;
+  line-height: 60px;
   color: #151515;
+  max-width: 300px;
 }
 
 .showcase__header--paragraph {
@@ -152,6 +157,8 @@ header {
   font-size: 22px;
   line-height: 32px;
   color: #444444;
+  max-width: 350px;
+  margin-top: 24px;
 }
 
 .showcase__bottom {
@@ -160,8 +167,8 @@ header {
 }
 
 .showcase__main--wrapper {
-  width: 640px;
   height: 666px;
+  flex: 2;
 }
 
 .showcase__main--img {
@@ -170,43 +177,45 @@ header {
 }
 
 .showcase__bottom--wrapper {
-  width: 300px;
-  height: 370px;
+  height: 320px;
 }
 
 .showcase__bottom--img {
-  height: 80%;
+  height: 100%;
   width: 100%;
 }
 
 .showcase__bottom--info {
   display: flex;
   flex-direction: column;
+  flex 1;
+  margin-left: 40px;
 }
 
 .showcase__description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #151515;
   color: #ffffff;
   padding: 40px;
   margin-top: 20px;
-  margin-left: 20px;
-  max-width: 446px;
+  max-width: 466px;
+  height: 100%;
 }
 
 .showcase__description--header {
   font-family: "Big Shoulders Display";
   font-size: 60px;
-  line-height: 50px;
+  line-height: 60px;
 }
 
 .showcase__description--paragraph {
   font-family: "Outfit";
   font-size: 22px;
   line-height: 32px;
+  margin-top: 30px;
 }
 
 /* FOOTER */
@@ -284,6 +293,7 @@ footer {
     width: 100%;
     background-size: cover;
     background-position: center;
+    box-shadow: none;
   }
 
   .header__text {
@@ -344,6 +354,7 @@ footer {
   }
 
   .showcase__bottom--info {
+    margin-left: 0px;
     max-width: 343px;
   }
 
