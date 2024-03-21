@@ -13,12 +13,13 @@
 }
 
 .container {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 /* HEADER */
 header {
-  /* min-height: calc(100vh - 210px);  */
+  height: calc(100vh - 210px);
+  margin-bottom: 210px; 
 }
 .header__container {
   display: flex;
@@ -26,10 +27,11 @@ header {
 }
 
 .header__text {
-  width: 75%;
+  /* width: 75%; */
+  width: 65%;
   position: absolute;
   top: 20%;
-  left: 10%;
+  /* left: 10%; */
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -52,6 +54,7 @@ header {
   font-size: 22px;
   line-height: 32px;
   color: #444444;
+  margin-bottom: 64px;
 }
 
 .header__img--wrapper {
@@ -61,7 +64,7 @@ header {
 
 .header__panel {
   background-color: #151515;
-  height: 100vh;
+  height: calc(100vh - 210px);
   width: 30%;
 }
 
@@ -72,7 +75,7 @@ header {
 
 .header__img {
   background-image: url("./assets/desktop/image-hero@2x.jpg");
-  height: 100%;
+  height: calc(100vh - 210px);
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -117,35 +120,6 @@ header {
 .header__button:hover .header__button--arrow {
   background-color: #151515;
 }
-
-/* .header__button--text,
-.header__button--arrow {
-    animation: 400ms ease-out 1s 1 colorSlide forwards;
-} */
-
-/* .header__button:hover .header__button--text {
-    background-color: #d5966c;
-}
-
-.header__button:hover .header__button--arrow {
-    background-color: #151515;
-} */
-
-/*
-linear-gradient(to right, black 50%, white 50%);
-*/
-/* @keyframes colorSlide {
-    50% {
-        background-color: linear-gradient(to left, #151515 50%, #d5966c 50%);
-    }
-    100% {
-        background-color: #d5966c;
-  }
-} */
-
-/* .header__button--img {
-  width: 100%;
-} */
 
 /* SHOWCASE */
 .showcase__top {
@@ -288,10 +262,15 @@ footer {
 @media (max-width: 375px) {
   .row {
     margin: 0 16px;
+    max-width: 343px;
   }
 
   .header__panel {
     display: none;
+  }
+
+  header {
+    height: 100px;
   }
 
   .header__img--wrapper {
@@ -340,11 +319,19 @@ footer {
 
   .showcase__top--wrapper {
     max-width: 343px;
+    max-height: 320px;
+    margin-top: 120px;
+    margin-bottom: 28px;
+  }
+
+  .showcase__top--img {
+    height: 100%;
   }
 
   .showcase__header--title {
     font-size: 50px;
     line-height: 45px;
+    max-width: 280px;
   }
 
   .showcase__header--paragraph {
@@ -366,8 +353,16 @@ footer {
     margin: 24px 0;
   }
 
+  .showcase__bottom--img{
+    height: 100%;
+  }
+
   .showcase__description {
-    margin: 20px 0;
+    margin: 20px 0 32px 0;
+  }
+
+  .showcase__header--paragraph {
+    margin: 28px 0;
   }
 
   .showcase__description--header {
@@ -377,6 +372,8 @@ footer {
 
   .showcase__description--paragraph {
     margin-top: 32px;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .showcase__main--wrapper {
@@ -391,7 +388,7 @@ footer {
 
   .footer__content {
     flex-direction: column;
-    margin: 12px 16px;
+    margin: 0px 16px;
   }
 
   .footer__header {
