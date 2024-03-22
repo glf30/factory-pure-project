@@ -292,7 +292,7 @@ footer {
 
   .header__img--wrapper {
     max-height: 240px;
-    width: 100%;
+    width: auto;
   }
 
   .header__img {
