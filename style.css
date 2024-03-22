@@ -26,11 +26,11 @@ header {
 }
 
 .header__row {
-  margin: 0 -220px;
+  margin: 0 -240px;
 }
 
 .header__text {
-  width: 65%;
+  width: 66%;
   position: absolute;
   top: 20%;
   display: flex;
@@ -40,6 +40,7 @@ header {
 .header__title {
   font-family: "Big Shoulders Display";
   font-size: 96px;
+  line-height: 88px;
   max-width: 450px;
   mix-blend-mode: difference;
   color: #ffffff;
