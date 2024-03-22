@@ -26,11 +26,11 @@ header {
 }
 
 .header__row {
-  margin: 0 -280px;
+  margin: 0 -220px;
 }
 
 .header__text {
-  width: 70%;
+  width: 65%;
   position: absolute;
   top: 20%;
   display: flex;
@@ -80,7 +80,6 @@ header {
   background-size: cover;
   background-position: center;
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  /* background-color: #ffffff; */
 }
 
 .header__button {
@@ -283,6 +282,11 @@ footer {
 
   header {
     height: 100px;
+    margin-bottom: 460px;
+  }
+
+  .header__row {
+    margin: 0;
   }
 
   .header__img--wrapper {
@@ -311,6 +315,7 @@ footer {
   .header__title {
     font-size: 60px;
     line-height: 55px;
+    color: #151515;
   }
 
   .header__description--text {
